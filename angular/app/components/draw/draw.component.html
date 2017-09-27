@@ -1,0 +1,32 @@
+<div class="Page-Container Landing">
+    <div class="Landing-laravelAngular">
+        <div layout="column" layout-gt-sm="row">
+            <div flex="50" class="Landing-angular" layout-align="center center">
+                <h2 class="md-display-2 Landing-laravelAngular-title">Lotto Draw</h2>
+                <md-button class="md-raised md-mini" ng-click="vm.fetchDraw()">Draw</md-button>
+                <md-button class="md-raised md-mini" ng-click="vm.downloadCsv()">Export all</md-button>
+                <br/>
+                <div class="DemoCode">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="text-center">&nbsp;&nbsp;#</th>
+                                <th class="text-center">&nbsp;&nbsp;Main ball</th>
+                                <th class="text-center">&nbsp;&nbsp;Power ball</th>
+                                <th class="text-center">&nbsp;&nbsp;Time</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="item in vm.getDraw() track by $index">
+                                <td><span>&nbsp;&nbsp;{{ $index + 1 }}</span></td>
+                                <td><span ng-repeat="value in item.main_ball track by $index">&nbsp;&nbsp;{{ value }}</span></td>
+                                <td><span ng-repeat="value in item.power_ball track by $index" style="color: red">&nbsp;&nbsp;{{ value }}</span></td>
+                                <td><span>&nbsp;&nbsp;{{ item.time }}</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
