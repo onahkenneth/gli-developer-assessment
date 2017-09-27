@@ -1,28 +1,20 @@
-## Laravel 5.3 Angular Material Starter
+# GLI Developer Assessment
 
-[![Latest Stable Version](https://poser.pugx.org/jadjoubran/laravel5-angular-material-starter/v/stable)](https://packagist.org/packages/jadjoubran/laravel5-angular-material-starter)
-[![Latest Unstable Version](https://poser.pugx.org/jadjoubran/laravel5-angular-material-starter/v/unstable)](https://packagist.org/packages/jadjoubran/laravel5-angular-material-starter)
-[![Build Status](https://travis-ci.org/jadjoubran/laravel5-angular-material-starter.svg?branch=master)](https://travis-ci.org/jadjoubran/laravel5-angular-material-starter)
-[![StyleCI](https://styleci.io/repos/34944760/shield?style=flat)](https://styleci.io/repos/34944760)
-[![Code Climate](https://codeclimate.com/github/jadjoubran/laravel5-angular-material-starter/badges/gpa.svg)](https://codeclimate.com/github/jadjoubran/laravel5-angular-material-starter)
-[![License](https://poser.pugx.org/jadjoubran/laravel5-angular-material-starter/license)](https://packagist.org/packages/jadjoubran/laravel5-angular-material-starter)
-[![Join the chat at https://gitter.im/jadjoubran/laravel5-angular-material-starter](https://badges.gitter.im/jadjoubran/laravel5-angular-material-starter.svg)](https://gitter.im/jadjoubran/laravel5-angular-material-starter?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+Source code was tested on Ubuntu Ubuntu 14.04.5 LTS 64-bit with Apache 2.4 + PHP-FPM installed
 
-![Laravel & Angular](http://i.imgur.com/CwQy3Il.png)
-
-
-## Demo
-
-An online <a href="http://www.laravel-angular.io/" target="_blank">demo</a> is available.
-
-
-## Docs
-
-[View Latest Docs](http://laravel-angular.readme.io/) for installation steps & tutorials.
-
-
-
-Running on 3.2? Here are the [3.2 Docs](https://laravel-angular.readme.io/v3.2)
+## Usage
+- commands are base on *nix systems specifically Ubuntu 14.04.5 LTS 64-bit
+1. Install [Git](https://git-scm.com/downloads), [Composer](https://getcomposer.org), [Node](https://nodejs.org/en/)
+2. Clone this repository with `git clone https://github.com/onahkenneth/gli-developer-assessment.git` 
+3. `cd` to path to the repository
+4. `composer install`
+5. `npm install -g gulp bower`
+6. `npm install`
+7. `bower install`
+8. create a database and fix database credentials in .env
+9. `php artisan migrate`
+10. `gulp`
+11. `php artisan serve` and browse to localhost:8000
 
 ## Laravel 5 & Angular 2
 
@@ -30,25 +22,10 @@ Join the discussion on
 - [Laravel & Angular](https://github.com/jadjoubran/laravel-angular)
 - [Angular & Laravel](https://github.com/jadjoubran/angular-laravel)
 
-## Screencasts
-
-Screencasts on [Youtube](https://www.youtube.com/c/LaravelAngularMaterialStarter).
-
-
-## Issues, questions and feature requests
-Open a new issue, I'd love to help.
-
-
-
-## Do It Yourself (Outdated)
-
-A nice article on <a href="http://www.sitepoint.com/flexible-and-easily-maintainable-laravel-angular-material-apps/" target="_blank">sitepoint</a> that explains the first few versions of this repository. Recommended read if you're not familiar with the underlying technologies.
-
-
-## Contributing
-
-Thank you for contributing to this repository.
-
-Here are the guidelines:
-
-1. If you are adding/modifying backend functionality, make sure to include the appropriate `test`. Let me know if you need help writing the test.
+## Dependencies
+- `php >= 7.1`
+- `git`
+- `composer`
+- `node`
+- `bower`
+- `gulp`
