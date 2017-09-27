@@ -1,6 +1,6 @@
 # GLI Developer Assessment
 
-Source code was tested on Ubuntu Ubuntu 14.04.5 LTS 64-bit with Apache 2.4 + PHP-FPM installed
+Source code was tested on Ubuntu 14.04.5 LTS 64-bit with Apache 2.4 + PHP-FPM installed
 
 ## Usage
 - commands are base on *nix systems specifically Ubuntu 14.04.5 LTS 64-bit
